@@ -1,3 +1,11 @@
+
+    
+  
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,9 +17,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#1565C0">
-    <title>Quiz Wheel Gear Game</title>
-    
-  <script type="module" crossorigin src="./assets/index-ic-EQQeR.js"></script>
+    <title>Hurup Gear Up</title>
+<script type="module" crossorigin src="./assets/index-ic-EQQeR.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-ciWtxb5p.css"">
 </head>
 
@@ -51,9 +58,10 @@
                 </div>
             </button>
 
-            <!-- Guest Login -->
+            <!-- Guest Login (touch-action:manipulation fixes Safari iOS tap issues) -->
             <button id="guest-btn"
-                class="w-full bg-white/10 hover:bg-white/20 text-blue-100 font-bold py-3 rounded-2xl transition-all border border-white/30 hover:border-white/50">
+                class="w-full bg-white/10 hover:bg-white/20 text-blue-100 font-bold py-3 rounded-2xl transition-all border border-white/30 hover:border-white/50"
+                style="touch-action: manipulation; -webkit-tap-highlight-color: transparent; cursor: pointer;">
                 Play as Guest (No Leaderboard)
             </button>
         </div>
@@ -62,7 +70,7 @@
 
         <!-- Mode Selection Section (Hidden by default) -->
         <div id="mode-selection" class="hidden space-y-4 animate-fade-in-up delay-200">
-            <h2 class="text-white text-xl font-bold mb-6 opacity-90">Select Game</h2>
+            <h2 class="text-white text-xl font-bold mb-6 opacity-90">Select Game Mode</h2>
 
             <div class="flex flex-col gap-4 w-64">
                 <button id="quick-play-btn"
@@ -183,4 +191,3 @@
 </body>
 
 </html>
-
